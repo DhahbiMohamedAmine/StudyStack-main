@@ -1,11 +1,44 @@
-<ul>
-    <li *ngFor="let document of documents">
-      {{ document.description }}
-      <a [href]="document.url" download>Télécharger</a>
-    </li>
-</ul>
-<h1>hello</h1>
-  
 
-
-
+<table class="table">
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>nom</th>
+      <th>description</th>
+      <th>download</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>tp4</td>
+      
+      <td>td_4</td>
+      <td><button type="button" class="btn btn-primary"><a href="assets/TP4_API_ES.pdf"
+        class="btn btn-default"
+        target="_blank"
+        download="TP4_API_ES.pdf"
+        >Download Now</a></button></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>chapitre3</td>
+      <td>chapitre_3</td>
+      <td><button type="button" class="btn btn-primary"><a href="assets/Chapitre3_IO_2022.pdf"
+        class="btn btn-default"
+        target="_blank"
+        download="Chapitre3_IO_2022.pdf"
+        >Download Now</a></button></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>td3</td>
+      <td>td_3</td>
+      <td><button type="button" class="btn btn-primary"><a href="assets/td3.pdf"
+        class="btn btn-default"
+        target="_blank"
+        download="td3.pdf"
+        >Download Now</a></button></td>
+    </tr>
+  </tbody>
+</table>

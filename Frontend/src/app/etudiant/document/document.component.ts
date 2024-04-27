@@ -7,13 +7,12 @@ import { DocumentService } from '../document.service';
   styleUrls: ['./document.component.css']
 })
 export class DocumentComponent implements OnInit {
-  documents: any[];
+  documents!: any[];
 
   constructor(private documentService: DocumentService) { }
-
   ngOnInit(): void {
     this.documentService.getDocuments().subscribe(data => {
-      this.documents = data.document; 
+      this.documents = data; 
     });
   }
 }

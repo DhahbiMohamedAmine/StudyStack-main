@@ -9,11 +9,12 @@ import { MenuComponent } from './menu/menu.component';
 import { HeaderEtudiantComponent } from './header-etudiant/header-etudiant.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DocumentComponent } from './document/document.component';
+import { MeetComponent } from './meet/meet.component';
 
 
 
 @NgModule({
-  declarations: [GestFichiersComponent, DashbordComponent, MenuComponent, HeaderEtudiantComponent, DocumentComponent],
+  declarations: [GestFichiersComponent, DashbordComponent, MenuComponent, HeaderEtudiantComponent, DocumentComponent, MeetComponent],
   imports: [
     CommonModule,
     EtudiantRoutingModule,
